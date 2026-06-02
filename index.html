@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Građevinska Statika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div id="sidebar-toggle" onclick="toggleSidebar()">➔</div>
+    <div id="sidebar">
+        <h3>Izbor Lekcije</h3>
+        <div class="sidebar-grid">
+            <a href="prosta.html" class="menu-item-link">
+                <div class="menu-btn">
+                    <div class="icon">🪵</div>
+                    <span>Prosta Greda</span>
+                </div>
+            </a>
+            <a href="konzola.html" class="menu-item-link">
+                <div class="menu-btn">
+                    <div class="icon">📐</div>
+                    <span>Konzola</span>
+                </div>
+            </a>
+            <a href="prepusti.html" class="menu-item-link">
+                <div class="menu-btn">
+                    <div class="icon">Bridge</div>
+                    <span>Sa Prepustima</span>
+                </div>
+            </a>
+            <a href="resetka.html" class="menu-item-link">
+                <div class="menu-btn">
+                    <div class="icon">🏗️</div>
+                    <span>Rešetka</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Dobrodošli u Svijet Statike 🌟</h1>
+        <p style="color: #64748b; margin-top: 0;">Povuci prstom sa lijeve ivice ekrana ili klikni na strelicu da otvoriš lekcije!</p>
+
+        <div class="card-container">
+            <h3>Izaberi svoj statički izazov</h3>
+            <p>Ova aplikacija pomaže inženjerima i studentima da vizuelno savladaju unutrašnje sile u konstrukcijama.</p>
+            <div style="font-size: 60px; margin: 20px 0;">🏗️📐📊</div>
+        </div>
+    </div>
+
+    <script src="sidebar.js"></script>
+</body>
+</html>
