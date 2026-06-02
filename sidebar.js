@@ -49,15 +49,18 @@ document.addEventListener('touchstart', (e) => {
         isDragging = true;
         setSmooth(false);
     }
-}, { passive: true });
+}, { passive: false });
 
 document.addEventListener('touchmove', (e) => {
     if (!isDragging) return;
+    if (e.cancelable) {
+        e.preventDefault();
+    }
     let currentX = e.touches[0].clientX;
     let deltaX = currentX - startX;
     let targetX = isOpen ? deltaX : -sidebarWidth + deltaX;
     updateSidebarPosition(targetX);
-}, { passive: true });
+}, { passive: false });
 
 document.addEventListener('touchend', (e) => {
     if (!isDragging) return;
