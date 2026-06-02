@@ -6,6 +6,9 @@ body {
     padding: 0;
     color: #1e293b;
     overflow-x: hidden;
+
+    overscroll-behavior-x: none;
+    touch-action: pan-y;
 }
 
 .main-content {
